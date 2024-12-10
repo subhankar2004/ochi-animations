@@ -14,7 +14,10 @@ const LandingPage = () => {
         
         <div key={index} className="masker ">
         <div className="w-fit flex flex-row ">
-          {index===1 && (<motion.div initial={{width:0}} animate={{width:"9vw"}} transition={{duration:1,ease:[0.76,0,0.24,1]}} className="w-[9vw] h-[5.2vw] bg-green-500 mt-[1vw] rounded-lg mr-[1vw] relative -top-[1.2vw"></motion.div>)}
+          {index===1 && (<motion.div initial={{width:0}} animate={{width:"9vw"}} transition={{duration:1,ease:[0.76,0,0.24,1]}} className="w-[9vw] h-[5.2vw] bg-green-500 mt-[1vw] rounded-lg mr-[1vw] relative -top-[1.2vw overflow-hidden">
+            <img src="https://th.bing.com/th/id/OIP.aok7KzqglAenUhS7PtDd9QHaHa?rs=1&pid=ImgDetMain" alt="logo" 
+            className='h-full w-full bg-auto' />
+          </motion.div>)}
         
           <h1 className='text-[7vw]  uppercase leading-[7.5vw] font-["Founders_Grotesk"] tracking-tighter  '>{text}</h1>
         </div>
